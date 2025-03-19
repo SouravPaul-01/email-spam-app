@@ -40,11 +40,11 @@ def transform_text(text):
 tk = pickle.load(open("vectorizer.pkl", 'rb'))
 model = pickle.load(open("model.pkl", 'rb'))
 
-st.title("Email Spam Detection Application")
-st.write("**This is a simple Email Spam Detection Model**")
+st.title("SMS Spam Detection Application")
+st.write("**This is a simple SMS Spam Detection Model**")
     
 
-input_sms = st.text_input("Enter the Email to to scan")
+input_sms = st.text_input("Enter the SMS to to scan")
 
 if st.button('Predict'):
 
